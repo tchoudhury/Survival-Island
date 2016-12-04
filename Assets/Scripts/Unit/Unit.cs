@@ -3,12 +3,12 @@ using System.Collections;
 
 public class Unit : MonoBehaviour {
 
-	[SerializeField] int health;
-	[SerializeField] int walkSpeed;
-	[SerializeField] int runSpeed;
+	[SerializeField] float health;
+	[SerializeField] float walkSpeed;
+	[SerializeField] float runSpeed;
 	[SerializeField] int damage;
 
-	public int Health {
+	public float Health {
 		get {
 			return health;
 		}
@@ -17,7 +17,7 @@ public class Unit : MonoBehaviour {
 		}
 	}
 
-	public int WalkSpeed {
+	public float WalkSpeed {
 		get {
 			return walkSpeed;
 		}
@@ -26,7 +26,7 @@ public class Unit : MonoBehaviour {
 		}
 	}
 
-	public int RunSpeed {
+	public float RunSpeed {
 		get {
 			return runSpeed;
 		}

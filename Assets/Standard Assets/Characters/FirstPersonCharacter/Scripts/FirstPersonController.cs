@@ -10,7 +10,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
-        [SerializeField] private bool m_IsWalking;
+		[SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
@@ -80,6 +80,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_WalkSpeed = value;
             }
         }
+
+		public bool IsWalking {
+			get {
+				return m_IsWalking;
+			}
+			set {
+				m_IsWalking = value;
+			}
+		}
 
         // Use this for initialization
         private void Start()
